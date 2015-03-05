@@ -1,0 +1,14 @@
+#!/bin/bash
+cd ~
+INSTALL_HOME='bin'
+cd $INSTALL_HOME
+wget http://downloads.sourceforge.net/project/nsnam/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz
+wget simula.stanford.edu/~alizade/Site/DCTCP_files/dctcp-ns2-rev1.0.tar.gz
+tar -zxvf ns-allinone-2.35.tar.gz
+tar -zxvf dctcp-ns2-rev1.0.tar.gz
+cp DCTCP_NS2_SOURCE/dctcp.patch ns-allinone-2.35/ns-2.35
+cd ns-allinone-2.35/ns-2.35
+patch -p1 --ignore-whitespace -i dctcp.patch
+cd ..
+sudo ./install
+
