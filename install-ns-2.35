@@ -1,14 +1,32 @@
 #!/bin/bash
+cp ns2/ls.h ~
 cd ~
-INSTALL_HOME='bin'
+BIN='bin'
+mkdir -p $BIN
+INSTALL_HOME=`pwd`$BIN
+mv ls.h $INSTALL_HOME
 cd $INSTALL_HOME
 wget http://downloads.sourceforge.net/project/nsnam/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz
 wget simula.stanford.edu/~alizade/Site/DCTCP_files/dctcp-ns2-rev1.0.tar.gz
 tar -zxvf ns-allinone-2.35.tar.gz
 tar -zxvf dctcp-ns2-rev1.0.tar.gz
+mv ls.h ns-allinone-2.35/ns-2.35/linkstats/
 cp DCTCP_NS2_SOURCE/dctcp.patch ns-allinone-2.35/ns-2.35
 cd ns-allinone-2.35/ns-2.35
 patch -p1 --ignore-whitespace -i dctcp.patch
 cd ..
 sudo ./install
+
+cd ~
+BASHRC='.bashrc'
+line='export PATH=$PATH:'$INSTALL_HOME'/ns-allinone-2.35/bin:/'$INSTALL_HOME'/ns-allinone-2.35/tcl8.5.10/unix/:'$INSTALL_HOME'/ns-allinone-2.35/tk8.5.10/unix/'
+echo $line >> $BASHRC
+line='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:'$INSTALL_HOME'/ns-allinone-2.35/otcl-1.14/:'$INSTALL_HOME'/ns-allinone-2.35/lib'
+echo $line >> $BASHRC
+line='export TCL_LIBRARY='$INSTALL_HOME'/ns-allinone-2.35/tcl8.5.10/library/:'$INSTALL_HOME'/ns-allinone-2.35/tk8.5.10/library/'
+echo $line >> $BASHRC
+line='export NS='$INSTALL_HOME'/ns-allinone-2.35/ns-2.35'
+echo $line >> $BASHRC
+line='export NSVER=2.35'
+echo $line >> $BASHRC
 
