@@ -13,7 +13,7 @@ wget http://downloads.sourceforge.net/project/nsnam/allinone/ns-allinone-2.35/ns
 wget simula.stanford.edu/~alizade/Site/DCTCP_files/dctcp-ns2-rev1.0.tar.gz -O $dctcp
 tar -zxvf $ns2
 tar -zxvf $dctcp
-mv ls.h ns-allinone-2.35/ns-2.35/linkstats/
+mv ls.h ns-allinone-2.35/ns-2.35/linkstate/
 cp DCTCP_NS2_SOURCE/dctcp.patch ns-allinone-2.35/ns-2.35
 cd ns-allinone-2.35/ns-2.35
 patch -p1 --ignore-whitespace -i dctcp.patch
