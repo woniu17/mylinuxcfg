@@ -36,4 +36,4 @@ line='export NS='$INSTALL_HOME'/ns-allinone-2.35/ns-2.35'
 echo $line >> $BASHRC
 line='export NSVER=2.35'
 echo $line >> $BASHRC
-
+. $BASHRC
