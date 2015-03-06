@@ -1,1 +1,3 @@
-sudo apt-get install matplotlib
+script install-matplotlib.log
+sudo apt-get -y install matplotlib
+exit

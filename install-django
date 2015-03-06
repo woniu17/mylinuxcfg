@@ -1,2 +1,4 @@
-sudo apt-get install python-setuptools
+script install-django.log
+sudo apt-get -y install python-setuptools
 sudo easy_install "django==1.4.5"
+exit
