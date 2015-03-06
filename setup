@@ -6,7 +6,7 @@ echo "alias ll='ls -l'" >> ~/.bashrc
 echo "alias la='ls -al'" >> ~/.bashrc
 alias la='ls -al'
 
-sh install-ns-2.35 |install-ns-2.35.log
+sh install-ns-2.35 |tee install-ns-2.35.log
 #install python-matplotlib
 sh install-py-matplotlib |tee install-py-matplotlib.log
 #install django
