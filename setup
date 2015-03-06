@@ -1,4 +1,9 @@
 #!/bin/bash
 cp gitconfig ~/.gitconfig
 cp vimrc ~/.vimrc
+
 sh install-ns-2.35
+#install python-matplotlib
+sh install-py-matplotlib
+#install django
+sh install-django

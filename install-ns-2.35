@@ -26,7 +26,7 @@ sudo ./install
 
 cd ~
 BASHRC='.bashrc'
-line='export PATH=$PATH:'$INSTALL_HOME'/ns-allinone-2.35/bin:/'$INSTALL_HOME'/ns-allinone-2.35/tcl8.5.10/unix/:'$INSTALL_HOME'/ns-allinone-2.35/tk8.5.10/unix/'
+line='export PATH=$PATH:'$INSTALL_HOME'/ns-allinone-2.35/bin:'$INSTALL_HOME'/ns-allinone-2.35/tcl8.5.10/unix/:'$INSTALL_HOME'/ns-allinone-2.35/tk8.5.10/unix/'
 echo $line >> $BASHRC
 line='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:'$INSTALL_HOME'/ns-allinone-2.35/otcl-1.14/:'$INSTALL_HOME'/ns-allinone-2.35/lib'
 echo $line >> $BASHRC
