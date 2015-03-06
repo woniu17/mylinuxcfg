@@ -1,4 +1,5 @@
-script install-ns-2.35.log
+#script install-ns-2.35.log
+echo 'hello'
 sudo apt-get update
 sudo apt-get -y install build-essential
 sudo apt-get -y install tcl8.5 tcl8.5-dev tk8.5 tk8.5-dev
@@ -37,5 +38,5 @@ line='export NS='$INSTALL_HOME'/ns-allinone-2.35/ns-2.35'
 echo $line >> $BASHRC
 line='export NSVER=2.35'
 echo $line >> $BASHRC
-. $BASHRC
-exit
+source $BASHRC
+#exit
