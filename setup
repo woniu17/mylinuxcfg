@@ -1,9 +1,13 @@
 #!/bin/bash
 cp gitconfig ~/.gitconfig
 cp vimrc ~/.vimrc
+#
+echo "alias ll='ls -l'" >> ~/.bashrc
+echo "alias la='ls -al'" >> ~/.bashrc
+alias la='ls -al'
 
-sh install-ns-2.35
+sh install-ns-2.35 |install-ns-2.35.log
 #install python-matplotlib
-sh install-py-matplotlib
+sh install-py-matplotlib |tee install-py-matplotlib.log
 #install django
-sh install-django
+sh install-django |tee install-django.log
