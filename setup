@@ -4,7 +4,6 @@ cp vimrc ~/.vimrc
 #
 echo "alias ll='ls -l'" >> ~/.bashrc
 echo "alias la='ls -al'" >> ~/.bashrc
-alias la='ls -al'
 
 #install ns-2.35
 sh install-ns-2.35 |tee install-ns-2.35.log
