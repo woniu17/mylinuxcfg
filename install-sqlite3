@@ -1,0 +1,10 @@
+sudo apt-get install python-dev
+sudo apt-get install sqlite3
+sudo apt-get install libsqlite3-dev
+cd /tmp
+wget https://pypi.python.org/packages/source/p/pysqlite/pysqlite-2.6.3.tar.gz#md5=7ff1cedee74646b50117acff87aa1cfa -O pysqlite.tar.gz
+tar -zxvf pysqlite.tar.gz
+cd pysqlite-2.6.3
+sudo python setup.py build
+sudo python setup.py install
+

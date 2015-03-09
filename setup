@@ -2,17 +2,22 @@
 cp gitconfig ~/.gitconfig
 cp vimrc ~/.vimrc
 #
-echo "alias ll='ls -l'" >> ~/.bashrc
-echo "alias la='ls -al'" >> ~/.bashrc
+#echo "alias ll='ls -l'" >> ~/.bashrc
+#echo "alias la='ls -al'" >> ~/.bashrc
+
+sudo apt-get update
 
 #install ns-2.35
-sh install-ns-2.35 |tee install-ns-2.35.log
+#sh install-ns-2.35 |tee install-ns-2.35.log
 
 #install python-matplotlib
-sh install-py-matplotlib |tee install-py-matplotlib.log
+#sh install-py-matplotlib |tee install-py-matplotlib.log
 
 #install mysql
-sh install-mysql |tee install-mysql.log
+#sh install-mysql |tee install-mysql.log
 
 #install django
-sh install-django |tee install-django.log
+#sh install-django |tee install-django.log
+
+#install sqlite3
+sh install-sqlite3 |tee install-sqlite3.log
