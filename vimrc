@@ -1,6 +1,6 @@
+syntax on
 "
 highlight Comment ctermfg=green guifg=green
-syntax on
 "show line number
 set nu
 "set 7 lines to the cursor when moving vertically using j/k
