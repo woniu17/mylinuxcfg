@@ -1,3 +1,5 @@
+"
+highlight Comment ctermfg=green guifg=green
 syntax on
 "show line number
 set nu

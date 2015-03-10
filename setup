@@ -20,4 +20,4 @@ sudo apt-get update
 #sh install-django |tee install-django.log
 
 #install sqlite3
-sh install-sqlite3 |tee install-sqlite3.log
+#sh install-sqlite3 |tee install-sqlite3.log
