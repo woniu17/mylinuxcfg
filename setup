@@ -2,10 +2,10 @@
 cp gitconfig ~/.gitconfig
 cp vimrc ~/.vimrc
 #
-#echo "alias ll='ls -l'" >> ~/.bashrc
-#echo "alias la='ls -al'" >> ~/.bashrc
+#echo "alias ll='ls -lh'" >> ~/.bashrc
+#echo "alias la='ls -alh'" >> ~/.bashrc
 
-sudo apt-get update
+#sudo apt-get update
 
 #install ns-2.35
 #sh install-ns-2.35 |tee install-ns-2.35.log
