@@ -3,3 +3,5 @@
 	email = qinglucklin@foxmail.com
 [color]
 	ui = true
+[core]
+	quotepath = false
